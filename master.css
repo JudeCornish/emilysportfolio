@@ -502,3 +502,15 @@ span.two {
 	height: 3px;
 	background: rgba(14, 14, 14, 0);
 }
+
+.piece-container {
+	opacity: 0;
+	transform: translateY(2rem);
+	transition: 1s ease-in-out;
+}
+
+.piece-container.is-visible {
+	opacity: 1;
+	transition: 1s ease-in-out;
+	transform: translateY(0rem);
+}
