@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Emily Raymond</title>
+		<link rel="icon" href="./resources/img/kephalonia-palette-knife.jpeg" />
+		<link rel="stylesheet" href="master.css" />
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css?family=Playfair+Display"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="header-container">
+			<div class="wrapper">
+				<header>
+					<div class="logo">
+						<h2>emily raymond art</h2>
+					</div>
+
+					<div class="toggle-btn">
+						<span class="one"></span>
+						<span class="two"></span>
+					</div>
+				</header>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="data">
+				<ul>
+					<li><a class="nav-link" href="#">Artwork</a></li>
+					<li><a class="nav-link" href="#">Designing</a></li>
+					<li><a class="nav-link" href="./pages/about.html">About me</a></li>
+					<li><a class="nav-link" href="#">Get in touch</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="main-container">
+				<div class="lhs">
+					<div class="sidebar">
+						<div class="logo sidebar-logo">
+							<a href="./index.html"><h2>emily raymond art</h2></a>
+						</div>
+						<div class="sidebar-nav">
+							<ul>
+								<li><a class="nav-link" href="#">Artwork</a></li>
+								<li><a class="nav-link" href="#">Design</a></li>
+								<li>
+									<a class="nav-link" href="./pages/about.html">About me</a>
+								</li>
+								<li><a class="nav-link" href="#">Get in touch</a></li>
+							</ul>
+						</div>
+						<div class="sidebar-secondary-nav">
+							<ul>
+								<li>
+									<a
+										class="nav-link"
+										href="https://www.instagram.com/emilyraymond.art/"
+										target="_blank"
+										>Instagram</a
+									>
+								</li>
+								<li>
+									<a
+										class="nav-link"
+										href="https://www.linkedin.com/in/emily-raymond-5753241b8/"
+										target="_blank"
+										>LinkedIn</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="rhs">
+					<div class="art-piece">
+						<div class="art-piece-image image-left">
+							<img src="resources/img/tulip.jpeg" alt="" />
+						</div>
+						<div class="art-piece-desc">
+							<div class="desc-desc">
+								<h2>Acrylic painting</h2>
+								<p>
+									In my acrylic paintings I love experimenting with texture,
+									particularly by using a palette knife. In some pieces I mix
+									acrylic mediums to create even more exaggerated textures.
+								</p>
+							</div>
+							<div class="art-piece-ctas">
+								<div class="art-piece-button">
+									<a href="/pages/acrylic-painting.html">View series</a>
+								</div>
+								<div class="art-piece-button">
+									<a href="">Share</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="art-piece">
+						<div class="art-piece-image mobile">
+							<img src="resources/img/gemma.jpeg" alt="" />
+						</div>
+						<div class="art-piece-desc">
+							<div class="desc-desc">
+								<h2>Oil painting</h2>
+								<p>
+									My Oil paintings are the product of a 2020 lockdown project of
+									trying a new medium. Although I considered it a very
+									traditional painting material, I have discovered there is a
+									whole range of possibilities available within lis medium.
+									Specifically the combination of Oils and Gold leaf: expanding
+									on my interest with textures.
+								</p>
+							</div>
+							<div class="art-piece-ctas">
+								<div class="art-piece-button">
+									<a href="pages/oil-painting.html">View series</a>
+								</div>
+								<div class="art-piece-button">
+									<a href="">Share</a>
+								</div>
+							</div>
+						</div>
+						<div class="art-piece-image image-right">
+							<img src="resources/img/gemma.jpeg" alt="" />
+						</div>
+					</div>
+					<div class="art-piece">
+						<div class="art-piece-image image-left">
+							<img src="resources/img/kephalonia-palette-knife.jpeg" alt="" />
+						</div>
+						<div class="art-piece-desc">
+							<div class="desc-desc">
+								<h2>Life drawing</h2>
+								<p>
+									This selection of drawings were produced during my first year
+									at Lancaster University. They are also experimental in nature
+									through the range of materials used: charcoal, Indian ink,
+									tissue paper.
+								</p>
+							</div>
+							<div class="art-piece-ctas">
+								<div class="art-piece-button">
+									<a href="pages/life-drawing.html">View series</a>
+								</div>
+								<div class="art-piece-button">
+									<a href="">Share</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			var t1 = new TimelineMax({ paused: true });
+
+			t1.to(".one", 0.4, {
+				y: 4,
+				rotation: 45,
+				ease: Expo.easeInOut,
+			});
+			t1.to(".two", 0.4, {
+				y: -4,
+				rotation: -45,
+				ease: Expo.easeInOut,
+				delay: -0.8,
+			});
+
+			t1.to(".menu", 1.25, {
+				top: "0%",
+				ease: Expo.easeInOut,
+				delay: -0.5,
+			});
+
+			t1.staggerFrom(
+				".menu ul li",
+				1,
+				{ x: -200, opacity: 0, ease: Expo.easeOut },
+				0.1
+			);
+
+			t1.reverse();
+			$(document).on("click", ".toggle-btn", function () {
+				t1.reversed(!t1.reversed());
+			});
+			$(document).on("click", "a", function () {
+				t1.reversed(!t1.reversed());
+			});
+		</script>
+		<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+	</body>
+</html>
