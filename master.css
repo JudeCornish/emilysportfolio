@@ -12,9 +12,6 @@ body {
 	box-sizing: border-box;
 }
 
-body {
-}
-
 .wrapper {
 	width: 90%;
 	max-width: 1200px;
@@ -303,6 +300,13 @@ span.two {
 
 .sidebar {
 	position: fixed;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.sidebar-top {
 	height: 40%;
 	display: flex;
 	flex-direction: column;
@@ -542,7 +546,7 @@ span.two {
 }
 
 .about-cta-container {
-	width: 30%;
+	width: 50%;
 }
 
 .about-cta {
@@ -571,4 +575,59 @@ span.two {
 .about-cta .icon {
 	font-size: 300%;
 	margin-bottom: 0.5vh;
+}
+
+.footer-inner {
+	font-family: Poppins;
+	font-size: 90%;
+	text-align: left;
+	width: 100%;
+	height: 50px;
+	line-height: 1.8;
+}
+
+.sidebar-footer-inner {
+	font-family: Poppins;
+	font-size: 90%;
+	text-align: left;
+	width: 100%;
+	height: 50px;
+	line-height: 1.8;
+}
+
+.footer-inner {
+	font-family: Poppins;
+	font-size: 90%;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	line-height: 1.8;
+}
+
+.content {
+	min-height: calc(100vh - 70px);
+}
+
+.sidebar-footer-inner a {
+	color: grey;
+	text-decoration: none;
+}
+
+.footer-inner a {
+	color: grey;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+	.footer-inner {
+		font-size: 70%;
+		margin-top: 2vh;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.footer-inner {
+		display: none;
+	}
 }
