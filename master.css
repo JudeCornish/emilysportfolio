@@ -155,6 +155,15 @@ span.two {
 	justify-content: space-evenly;
 }
 
+@media screen and (max-width: 800px) {
+	.desc-desc h2 {
+		margin-top: 3vh;
+	}
+	.desc-desc p {
+		margin-bottom: 5vh;
+	}
+}
+
 .art-piece-desc h2 {
 	margin-bottom: 1vh;
 }
