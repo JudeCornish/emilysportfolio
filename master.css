@@ -399,6 +399,11 @@ span.two {
 	align-items: center;
 }
 
+.about-main-content {
+	border-bottom: 2px solid rgb(198, 198, 198);
+	padding-bottom: 2.5vh;
+}
+
 @media screen and (max-width: 800px) {
 	.about-desc {
 		border-top: 0px;
@@ -526,4 +531,44 @@ span.two {
 	opacity: 1;
 	transition: 1s ease-in-out;
 	transform: translateY(0rem);
+}
+
+.about-ctas {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	font-family: Poppins;
+	margin-top: 4vh;
+}
+
+.about-cta-container {
+	width: 30%;
+}
+
+.about-cta {
+	color: rgb(60, 60, 60);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	transition: 0.5s all ease;
+}
+
+.about-cta:hover {
+	color: rgb(26, 108, 138);
+	transition: 0.5s all ease;
+}
+
+.about-cta-container a {
+	text-align: center;
+	text-decoration: none;
+}
+
+.about-cta h2 {
+	font-size: 100%;
+}
+
+.about-cta .icon {
+	font-size: 300%;
+	margin-bottom: 0.5vh;
 }
