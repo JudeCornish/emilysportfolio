@@ -157,9 +157,13 @@ span.two {
 
 @media screen and (max-width: 800px) {
 	.desc-desc h2 {
-		margin-top: 3vh;
+		margin-top: 2vh;
 	}
 	.desc-desc p {
+		margin-bottom: 3vh;
+	}
+
+	.desc-desc {
 		margin-bottom: 5vh;
 	}
 }
